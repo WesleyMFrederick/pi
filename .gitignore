@@ -2,6 +2,18 @@ node_modules/
 dist/
 *.log
 .DS_Store
+
+# Override global ~/.gitignore_global rules for tracked dot-folders and env/
+!.gitattributes
+!.github
+!.github/**
+!.husky
+!.husky/**
+!.pi
+!.pi/**
+!.npmrc
+!packages/agent/src/harness/env
+!packages/agent/src/harness/env/**
 *.tsbuildinfo
 # packages/*/node_modules/
 packages/*/dist/
