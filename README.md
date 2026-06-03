@@ -64,6 +64,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines and [AGENTS.m
 ## Development
 
 ```bash
+git pull
 npm install          # Install all dependencies
 npm run build        # Build all packages
 npm run check        # Lint, format, and type check
