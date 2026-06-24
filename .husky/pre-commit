@@ -1,5 +1,13 @@
 #!/bin/sh
 
+# Fork-sync guard: refuse commits on main — fork main only fast-forwards from upstream.
+# (Pairs with scripts/sync-fork.sh, which uses `git merge --ff-only`.)
+branch=$(git symbolic-ref --short HEAD 2>/dev/null || echo "")
+if [ "$branch" = "main" ] || [ "$branch" = "master" ]; then
+  echo "pre-commit: refusing commit on '$branch' — switch to a feature branch (fork main only fast-forwards from upstream)." >&2
+  exit 1
+fi
+
 # Get list of staged files before running check
 STAGED_FILES=$(git diff --cached --name-only)
 
