@@ -23,7 +23,7 @@ To learn more about Pi:
 * [Visit pi.dev](https://pi.dev), the project website with demos
 * [Read the documentation](https://pi.dev/docs/latest), but you can also ask the agent to explain itself
 
-## All Packages
+## All Packagesx 
 
 | Package | Description |
 |---------|-------------|

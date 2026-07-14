@@ -1,0 +1,10 @@
+{
+  "filesystem": {
+    "allowWrite": [
+      ".",
+      "/tmp",
+      "/Users/wesleyfrederick/.pi/agent/extensions/sandbox",
+      "/Users/wesleyfrederick/Documents/ObsidianVault/0_SoftwareDevelopment/jact/design-docs/research/pi-gold-standard-vs-jact-content-extractor.md"
+    ]
+  }
+}
